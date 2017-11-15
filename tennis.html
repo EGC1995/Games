@@ -6,8 +6,15 @@
 </canvas>
 
 <script>
+  var canvas;
+  var canvasContext;
+
   window.onload = function(){
     console.log("hello world");
+    canvas = document.getElementById('gameCanvas');
+    canvasContex = canvas.getContext('2d');
+    canvasContex.fillStyle = 'black';
+    canvasContex.fillRect(0,0,canvas.width, canvas.height);
   }
 </script>
 
